@@ -26,6 +26,8 @@ The first column will be the same as yours. As you would notice, the mapping is 
 
 The executable file ConSave.exe creates an html file using the CPtoUTF8 file. Black is the default background color. In the generated html page, the colors of the console characters are preserved, as shown in the following screenshot.
 
+![Screenshot of a generated html file.](https://github.com/kpatrinos/copy_windows_console_as_html/blob/5631ecec972ad70532837f195426e57e1f5998c7/copy_windows_console_as_html.png)
+
 The consave command is typed in the console that we want to copy. For example:\
 ``` consave ```\
 to create an html file named 'con_text_' + 'datetime'.html in the present working directory, or\
