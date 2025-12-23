@@ -31,4 +31,11 @@ to create an html file named 'con_text_' + 'datetime'.html in the present workin
 if you want to give your own filename instead of the default.\
 The ```-h``` option is for help.
 
+## Installation (e.g. in windows 10, 64 bit)
+
+* Create a new folder, e.g. c:\cs and copy the two executable files, ConSave.exe and cp_to_utf-8.exe, into it.
+
+* Right-click on the windows start button and select system. In the right column of the pop-up window titled 'Related Settings' select 'Advanced system settings' and in the new pop-up window entitled 'System Properties' select 'Advanced' tab and at the bottom click on the 'Environment Variables ...' button. Then in the new pop-up window, in the section titled 'User variables for "your_user_name" ' select 'Path' and click on the 'Edit' button. In the new pop-up window click on the 'New' button and type, for this example, "c:\cs" and click 'OK' in all open windows.
+
+* Copy the CPtoUTF8 file you created with the above procedure to your own profile folder, for example in the folder "C:\Users\your_user_name".
 
