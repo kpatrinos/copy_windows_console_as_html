@@ -11,12 +11,14 @@ Active code page: 737
 
 * On the website https://www.unicode.org/Public/MAPPINGS/VENDORS/MICSFT/PC/ select the link corresponding to your active code page and download this webpage as a text file, for example CP437.TXT. Then edit this file with notepad and remove the first few lines, leaving the rest of the lines, that is, from the one that starts with "0x00 0x0000 #NULL" and below. Save this file, for the said example, as cp437_mod.txt.
 
-* Type, for the aforementioned example, "cp_to_utf-8 cp437 cp437_mod.txt test.txt". The first argument, cp437, is the name of the active codepage so change it to your own. The second argument, cp437_mod.txt, is the one we already mentioned before, and the third, test.txt, is an output text file. Open the test.txt file with notepad to see if the mapping is correct. For example, in my case, for active codepage 737 the first three lines appear as follows,\
+* Type, for the aforementioned example,\
+``` cp_to_utf-8 cp437 cp437_mod.txt test.txt ```\
+The first argument, cp437, is the name of the active codepage so change it to your own. The second argument, cp437_mod.txt, is the one we already mentioned before, and the third, test.txt, is an output text file. Open the test.txt file with notepad to see if the mapping is correct. For example, in my case, for active codepage 737 the first three lines appear as follows,\
 0xFFFFFF80 0xCE91\
 0xFFFFFF81 0xCE92\
 0xFFFFFF82 0xCE93\
 \. \. \.\
-The first column will be the same as yours. As you would notice, the mapping is done in the second half of the original mapping file which for our example is cp437_mod.txt, because the first half is the same in all codepages. Also the hexadecimal number 0xFFFFFF00 has been added with all the hexadecimal elements of the first column (four bytes per character).
+The first column will be the same as yours. The second column represents the corresponding utf-8 codes, which you can easily find by doing a relevant search on the internet. As you would notice, the mapping is done in the second half of the original mapping file which for our example is cp437_mod.txt, because the first half is the same in all codepages. Also the hexadecimal number 0xFFFFFF00 has been added with all the hexadecimal elements of the first column (four bytes per character).
 
 * Once you have verified that the mapping in the test.txt file is correct, rename it to CPtoUTF8 (without extension) and copy it to your own profile folder, which is located in the folder "C:\Users".
 
