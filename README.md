@@ -1,8 +1,4 @@
-# copy_windows_console_as_html
-
-A methodology for the best possible copying of the windows console to an html file.
-
-## Copying the windows console to an html file.
+# Copying the windows console to an html file.
 
 The purpose of this project is to develop a methodology for the best possible copying of the windows console to an html file. In order to achieve this, two small executable files that run in the windows console are used, namely ConSave.exe and cp_to_utf-8.exe.
 
