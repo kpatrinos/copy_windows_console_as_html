@@ -1,12 +1,12 @@
-# Copying the windows console to an html file.
+# Copy Windows Command Prompt display as HTML
 
-The purpose of this project is to develop a methodology for the best possible copying of the windows console to an html file. In order to achieve this, two small executable files that run in the windows console are used, namely ConSave.exe and cp_to_utf-8.exe.
+The purpose of this project is to develop a methodology for the best possible way to copy Windows Command Prompt display as html file. In order to achieve this, two small executable files that run in the windows console are used, namely ConSave.exe and cp_to_utf-8.exe.
 
 An optional prerequisite is the installation of python 3, for easier creation of the mapping file of the active code page to utf-8, using the executable file cp_to_utf-8.exe.
 
 The executable file cp_to_utf-8.exe is a script written in python (specifically it has been written in python 3.10 - 64 bit) and is used to create a mapping file from the active code page of the windows console to utf-8. The procedure is as follows.
 
-* From Start -> Windows System -> Command Prompt open the console and type "chcp". In my case the output is:\
+* From Start -> Windows System -> Command Prompt, open the console and type "chcp". In my case the output is:\
 Active code page: 737
 
 * On the website https://www.unicode.org/Public/MAPPINGS/VENDORS/MICSFT/PC/ select the link corresponding to your active code page and download this webpage as a text file, for example CP437.TXT. Then edit this file with notepad and remove the first few lines, leaving the rest of the lines, that is, from the one that starts with "0x00 0x0000 #NULL" and below. Save this file, for the said example, as cp437_mod.txt.
